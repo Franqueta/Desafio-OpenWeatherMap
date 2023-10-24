@@ -6,10 +6,7 @@ API: Para este desafio, será utilizada a API pública do OpenWeatherMap, que fo
 
 Dados: Os dados fornecidos pela API incluem informações como temperatura, umidade, pressão e velocidade do vento. Os dados devem ser coletados por meio de solicitações HTTP para a API e armazenados em uma tabela em uma base de dados SQL.
 
-. .
-
-. .
-
+. ..
 Problemas a serem resolvidos:
 Obter a temperatura atual para uma lista de cidades do seu estado e armazenar os resultados em uma tabela SQL.
 
@@ -34,3 +31,8 @@ Identificar as cidades com a maior e menor umidade média em um período de 30 d
 Observação: Para realizar este desafio, você deve ter conhecimento básico/intermediário em Python e SQL, além de ser capaz de trabalhar com APIs. Você pode utilizar quaisquer bibliotecas Python para realizar as solicitações HTTP e armazenar os dados em uma base de dados SQL, como Requests, Pandas, SQLAlchemy, entre outras. Além disso, você pode escolher qualquer banco de dados SQL, como MySQL, PostgreSQL, SQLite, entre outros.
 
 Observação: Para o você se desafiar o ideal que você aprenda docker, pelo menos o básico para conseguir subir um container do mysql ou outro banco a seu gosto, e persista os dados nele. Caso você ache muito difícil, sugiro você salvar em formato CSV.
+
+#PASSO A PASSO DE RESOLUÇÃO
+
+Foi pego a API do tempo e em json  na aba main, foi coletado a informação de tempo atual, com isso foi colocado e formato PARQUET e inserido em um Bucket no Minio, para poder futuramente realizar um join e conseguir fazer as consultas conforme for desejado, lembrando que até a finalização do projeto vai ser trocado de parquet para delta.
+
