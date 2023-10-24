@@ -33,6 +33,5 @@ Observação: Para realizar este desafio, você deve ter conhecimento básico/in
 Observação: Para o você se desafiar o ideal que você aprenda docker, pelo menos o básico para conseguir subir um container do mysql ou outro banco a seu gosto, e persista os dados nele. Caso você ache muito difícil, sugiro você salvar em formato CSV.
 
 # ***PASSO A PASSO DE RESOLUÇÃO***
-
-***Foi pego a API do tempo e em json  na aba main, foi coletado a informação de tempo atual, com isso foi colocado e formato PARQUET e inserido em um Bucket no Minio, para poder futuramente realizar um join e conseguir fazer as consultas conforme for desejado, lembrando que até a finalização do projeto vai ser trocado de parquet para delta.***
+***1-Foi pego a API do tempo e em json  na aba main, foi coletado a informação de tempo atual, com isso foi colocado e formato PARQUET e inserido em um Bucket no Minio, para poder futuramente realizar um join e conseguir fazer as consultas conforme for desejado, lembrando que até a finalização do projeto vai ser trocado de parquet para delta.***
 
