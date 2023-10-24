@@ -34,5 +34,5 @@ Observação: Para o você se desafiar o ideal que você aprenda docker, pelo me
 
 # ***PASSO A PASSO DE RESOLUÇÃO***
 
-# ***Foi pego a API do tempo e em json  na aba main, foi coletado a informação de tempo atual, com isso foi colocado e formato PARQUET e inserido em um Bucket no Minio, para poder futuramente realizar um join e conseguir fazer as consultas conforme for desejado, lembrando que até a finalização do projeto vai ser trocado de parquet para delta.***
+***Foi pego a API do tempo e em json  na aba main, foi coletado a informação de tempo atual, com isso foi colocado e formato PARQUET e inserido em um Bucket no Minio, para poder futuramente realizar um join e conseguir fazer as consultas conforme for desejado, lembrando que até a finalização do projeto vai ser trocado de parquet para delta.***
 
