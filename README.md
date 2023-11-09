@@ -32,7 +32,10 @@ Observação: Para o você se desafiar o ideal que você aprenda docker, pelo me
 ***1- Foi pego a API do tempo e em json  na aba main, foi coletado a informação de tempo atual, com isso foi colocado e formato PARQUET e inserido em um Bucket no Minio, para poder futuramente realizar um join e conseguir fazer as consultas conforme for desejado, lembrando que até a finalização do projeto vai ser trocado de parquet para delta.***
 
 ***2- Foi feito a instalação do ambiente apache airflow para poder fazer a coleta automatica dos dados durante 7 dias.***
+
 ***3- Foi armazenado tudo em um bucket, foi criado um bucket no minio para poder armazenar os scripts de webscrapping.***
+
 ***4- Criado um bucket que nele possui as pastas Transient,Raw,Trusted,Refined para poder fazer a triagem de todo o processo***
+
 ***5- Foi desenvolvido um código com a função de criar um spark.read.format().load para poder realizar consultas de resultado ao inves de criar um arquivo com a armazenação completa de todas as informações***
 
