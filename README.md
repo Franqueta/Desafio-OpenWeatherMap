@@ -24,14 +24,15 @@ Obter a previsão do tempo para uma lista de cidades do seu estado nos próximos
 
 Identificar a cidade com a maior quantidade de dias chuvosos em um período de 30 dias e exibir o resultado em uma tabela SQL.
 
-Calcular a média de umidade para cada dia em um período de 30 dias e exibir os resultados em uma tabela SQL.
-
-Identificar as cidades com a maior e menor umidade média em um período de 30 dias e exibir os resultados em uma tabela SQL.
-
 Observação: Para realizar este desafio, você deve ter conhecimento básico/intermediário em Python e SQL, além de ser capaz de trabalhar com APIs. Você pode utilizar quaisquer bibliotecas Python para realizar as solicitações HTTP e armazenar os dados em uma base de dados SQL, como Requests, Pandas, SQLAlchemy, entre outras. Além disso, você pode escolher qualquer banco de dados SQL, como MySQL, PostgreSQL, SQLite, entre outros.
 
 Observação: Para o você se desafiar o ideal que você aprenda docker, pelo menos o básico para conseguir subir um container do mysql ou outro banco a seu gosto, e persista os dados nele. Caso você ache muito difícil, sugiro você salvar em formato CSV.
 
 # ***PASSO A PASSO DE RESOLUÇÃO***
 ***1- Foi pego a API do tempo e em json  na aba main, foi coletado a informação de tempo atual, com isso foi colocado e formato PARQUET e inserido em um Bucket no Minio, para poder futuramente realizar um join e conseguir fazer as consultas conforme for desejado, lembrando que até a finalização do projeto vai ser trocado de parquet para delta.***
+
+***2- Foi feito a instalação do ambiente apache airflow para poder fazer a coleta automatica dos dados durante 7 dias.***
+***3- Foi armazenado tudo em um bucket, foi criado um bucket no minio para poder armazenar os scripts de webscrapping.***
+***4- Criado um bucket que nele possui as pastas Transient,Raw,Trusted,Refined para poder fazer a triagem de todo o processo***
+***5- Foi desenvolvido um código com a função de criar um spark.read.format().load para poder realizar consultas de resultado ao inves de criar um arquivo com a armazenação completa de todas as informações***
 
